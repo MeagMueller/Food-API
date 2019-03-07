@@ -1,0 +1,40 @@
+{
+  "foods": [
+    {
+      "id": 1,
+      "name": "Linguine",
+      "category": "pasta",
+      "ethnicity": "italian"
+    },
+    {
+      "id": 2,
+      "name": "Massaman curry",
+      "category": "curry",
+      "ethnicity": "thai"
+    },
+    {
+      "id": 3,
+      "name": "Green curry",
+      "category": "curry",
+      "ethnicity": "thai"
+    },
+    {
+      "id": 4,
+      "name": "Ravioli Funghi",
+      "category": "pasta",
+      "ethnicity": "italian"
+    },
+    {
+      "name": "Taco soup",
+      "category": "soup",
+      "ethnicity": "Mexican but not really",
+      "id": 6
+    },
+    {
+      "name": "Sushi",
+      "category": "dinner",
+      "ethnicity": "Japanese",
+      "id": 7
+    }
+  ]
+}
