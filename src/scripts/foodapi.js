@@ -14,7 +14,13 @@ fetch("http://localhost:8088/foods")
     .then(foods => foods.json())
     .then(parsedFoods => {
         parsedFoods.forEach(food => {
-            foodDisplay.innerHTML += nomsOnDom(food)
+            fetch(`https://world.openfoodfacts.org/api/v0/product/${food.barcode}.json`)
+            .then(response => response.json())
+            .then(productInfo => {
+                food.
+                foodDisplay.innerHTML += nomsOnDom(food)
+            })
         })
-    })
+})
+
 
