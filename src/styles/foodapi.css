@@ -1,0 +1,11 @@
+#foodList {
+    display: flex;
+    flex-direction: row;
+}
+
+.eachNom {
+    margin: 5px;
+    padding: 10px;
+    border: 1px solid red;
+    text-align: center;
+}

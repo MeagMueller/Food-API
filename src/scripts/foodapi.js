@@ -1,15 +1,20 @@
 console.log("ohai")
 
-const foodFactory = (food => {
-    
-})
+const foodDisplay = document.querySelector("#foodList")
+
+const nomsOnDom = (domNoms) => {
+    return `<div class="eachNom">
+                <h2>${domNoms.name}</h2>
+                <p>${domNoms.category}</p>
+                <p>${domNoms.ethnicity} 
+            </div>`
+}
 
 fetch("http://localhost:8088/foods")
     .then(foods => foods.json())
     .then(parsedFoods => {
         parsedFoods.forEach(food => {
-            const foodAsHTML = foodFactory(food)
-            addFoodToDom(foodAsHTML)
+            foodDisplay.innerHTML += nomsOnDom(food)
         })
     })
 
